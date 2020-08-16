@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam</title>
+    <link rel="stylesheet" href="2.js">
+</head>
+<body>
+    <div style="display: flex; justify-content: center;background-color: gray; align-items: center;" style="height: 100vh;">
+        <div>
+            <p>* items are mandetory</p>
+            <form >
+                <div>
+                <label for="username">Username*</label>
+                <input type="text" id="username" pattern="[a-zA-Z0-9]" placeholder="omkar123">
+                </div>
+
+                <div style="margin-top:10px;">
+                <label for="password">Password*</label>
+                <input type="password" id="password"  >
+                </div>
+
+                <div style="margin-top:10px;">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" pattern="+@gmail.com" placeholder="omkarsukale9@gmail.com">
+                    </div>
+
+                    <div>
+                        <button onclick="submit(this)">submit</button>
+                    </div>
+            </form>
+            <div id="display" style="display: flex; flex-direction: column;">
+                    <div style="visibility: hidden;" >username</div>
+                    <div style="visibility: hidden;" >password</div>
+                    <div style="visibility: hidden;" >email</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
